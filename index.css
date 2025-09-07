@@ -1,0 +1,97 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5; /* Light grey background */
+    color: #1f2937; /* Dark grey text */
+}
+
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.education-section {
+    font-family: Arial, sans-serif; /* A clean, modern font */
+    max-width: 800px;
+    margin: 20px auto; /* Center the section */
+    padding: 20px;
+}
+
+.education-section h2 {
+    font-size: 24px;
+    color: #2c3e50; /* A dark blue color for the heading */
+    border-bottom: 2px solid #3498db; /* A blue bottom border */
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.education-entry {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 3px solid #ecf0f1; /* A light grey left border for a timeline effect */
+}
+        
+.education-entry:hover {
+    border-left: 3px solid #3498db; /* Highlight border on hover */
+}
+
+.degree {
+    font-size: 18px;
+    font-weight: bold;
+    color: #34495e; /* A slightly lighter dark blue */
+    margin: 0;
+}
+
+.institution {
+    font-size: 16px;
+    color: #7f8c8d; /* A grey color for the institution name */
+    margin: 5px 0;
+}
+
+.dates {
+    font-size: 14px;
+    color: #95a5a6; /* A lighter grey for dates */
+    margin: 5px 0;
+}
+        
+.skill-card, .project-card, .exp-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover, .project-card:hover, .exp-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#typed-text-cursor {
+    display: inline-block;
+    background-color: #f0f2f5;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}

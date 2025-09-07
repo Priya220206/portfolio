@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priya Gupta | Interactive Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navbar -->
+    <header id="navbar" class="navbar fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <img src="priya photo.jpg" alt="Priya Gupta" class="w-10 h-10 rounded-full">
+            <a href="#" class="text-xl font-bold text-gray-800">Priya Gupta</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors">About</a>
+                <a href="#education" class="text-gray-600 hover:text-indigo-600 transition-colors">Education</a>
+                <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition-colors">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition-colors">Projects</a>
+                <a href="#experience" class="text-gray-600 hover:text-indigo-600 transition-colors">Experience</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+             <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600">About</a>
+             <a href="#education" class="text-gray-600 hover:text-indigo-600 transition-colors">Education</a>
+             <a href="#skills" class="block py-2 text-gray-600 hover:text-indigo-600">Skills</a>
+             <a href="#projects" class="block py-2 text-gray-600 hover:text-indigo-600">Projects</a>
+             <a href="#experience" class="block py-2 text-gray-600 hover:text-indigo-600">Experience</a>
+             <a href="#contact" class="block py-2 text-gray-600 hover:text-indigo-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-gradient text-white min-h-screen flex items-center">
+            <div class="container mx-auto px-6 text-center">
+                <img src="priya photo.jpg" alt="Priya Gupta" class="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-white shadow-lg">
+                <h1 class="text-5xl md:text-7xl font-bold mb-3">Priya Gupta</h1>
+                <p class="text-xl md:text-2xl font-light">
+                    <span>A passionate </span>
+                    <span id="typed-text" class="font-medium"></span>
+                    <span id="typed-text-cursor">&nbsp;</span>
+                </p>
+                <div class="mt-8">
+                    <a href="#projects" class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-transform transform hover:scale-105">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-10">About Me</h2>
+                <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-md text-center">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Driven B.Tech student in Industrial and Production Engineering at Dr. B.R. Ambedkar National Institute of Technology Jalandhar, with a strong foundation in analytical problem-solving, technical knowledge, and leadership. Passionate about integrating mechanical engineering principles with real-world applications. Seeking opportunities to apply technical expertise, teamwork, and leadership skills for impactful growth.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id='education' class="education-section">
+            <h2>EDUCATION</h2>
+            <div class="education-entry">
+                <p class="degree">Bachelor of Technology (B.Tech) | Industrial and Production Engineering</p>
+                <p class="institution">Dr. B.R. Ambedkar National Institute of Technology Jalandhar, Punjab</p>
+                <p class="dates">Aug 2024 – Present</p>
+            </div>
+
+            <div class="education-entry">
+                <p class="degree">12th Grade</p>
+                <p class="institution">Jai Hind College, Mumbai</p>
+                <p class="dates">Completed: May 2023</p>
+            </div>
+
+            <div class="education-entry">
+                <p class="degree">10th Grade</p>
+                <p class="institution">Fellowship School, Mumbai</p>
+                <p class="dates">Completed: May 2021</p>
+            </div>
+
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-white fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Technical Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Programming & Software -->
+                    <div class="skill-card bg-gray-50 p-8 rounded-xl">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600 mb-4">
+                            <i data-lucide="code-2" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Programming & Software</h3>
+                        <p class="text-gray-600">Python, C (Beginner), Machine Learning (Scikit-learn, Matplotlib, Numpy, Pandas), AI, AutoCAD, SolidWorks.</p>
+                    </div>
+                    <!-- Problem Solving -->
+                    <div class="skill-card bg-gray-50 p-8 rounded-xl">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600 mb-4">
+                           <i data-lucide="brain-circuit" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Problem-Solving</h3>
+                        <p class="text-gray-600">Analytical solutions for PDE & ODE, critical thinking, data analysis, and deriving insights from complex datasets.</p>
+                    </div>
+                    <!-- Engineering Skills -->
+                    <div class="skill-card bg-gray-50 p-8 rounded-xl">
+                         <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 text-indigo-600 mb-4">
+                           <i data-lucide="wrench" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Mechanical & Engineering</h3>
+                        <p class="text-gray-600">Strong foundation in solid mechanics, manufacturing processes, material science, and engineering graphics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- Project 1 -->
+                    <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
+                        <img src="https://placehold.co/600x400/667eea/FFFFFF?text=Predictive+Maintenance" alt="Predictive Maintenance Project" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Predictive Maintenance Model</h3>
+                            <p class="text-gray-700 mb-4">Developed a predictive model using Machine Learning techniques to forecast equipment failure, integrating industrial engineering principles.</p>
+                            <a href="https://github.com/Priya220206/project2" class="font-semibold text-indigo-600 hover:text-indigo-800">View Project Repo<span aria-hidden="true">→</span></a>
+                            <br>
+                            <a href="https://project1-predictive-maintenance.streamlit.app/" class="font-semibold text-indigo-600 hover:text-indigo-800">View Web App <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
+                        <img src="https://placehold.co/600x400/764ba2/FFFFFF?text=Mental+Health+Analysis" alt="Mental Health in Tech Survey Project" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Mental Health in Tech Analysis</h3>
+                            <p class="text-gray-700 mb-4">Analyzed the 'Mental Health in Tech Survey' dataset to build a product for predicting age, treatment needs, and clustering individuals.</p>
+                            <a href="https://github.com/Priya220206/OL-25-LP-107" class="font-semibold text-indigo-600 hover:text-indigo-800">View Project Repo<span aria-hidden="true">→</span></a>
+                            <br>
+                            <a href="https://capstone-project-ol-25-lp-107.streamlit.app/" class="font-semibold text-indigo-600 hover:text-indigo-800">View Web App <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 bg-white fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Leadership & Experience</h2>
+                <div class="max-w-3xl mx-auto">
+                    <div class="space-y-8">
+                        <!-- Experience 1 -->
+                        <div class="exp-card flex bg-gray-50 p-6 rounded-xl">
+                            <div class="mr-4 pt-1">
+                                <span class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-100 text-indigo-600"><i data-lucide="users"></i></span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">Class Representative - NIT Jalandhar</h3>
+                                <p class="text-sm text-gray-500">August 2025 - Present</p>
+                                <p class="mt-1 text-gray-700">Acting as a liaison between students and faculty, managing academic communications and student concerns.</p>
+                            </div>
+                        </div>
+                        <!-- Experience 2 -->
+                         <div class="exp-card flex bg-gray-50 p-6 rounded-xl">
+                            <div class="mr-4 pt-1">
+                               <span class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-100 text-indigo-600"><i data-lucide="presentation"></i></span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">Anchoring/Presentation Co-Lead, NSS-NIT Jalandhar</h3>
+                                <p class="text-sm text-gray-500">August 2024 - Present</p>
+                                <p class="mt-1 text-gray-700">Hosting events and delivering presentations to ensure a smooth program flow and engage the audience effectively.</p>
+                            </div>
+                        </div>
+                        <!-- Experience 3 -->
+                         <div class="exp-card flex bg-gray-50 p-6 rounded-xl">
+                            <div class="mr-4 pt-1">
+                               <span class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-100 text-indigo-600"><i data-lucide="shield"></i></span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">Head, NCC Girls Battalion - Fellowship School</h3>
+                                <p class="text-sm text-gray-500">June 2018 - May 2021</p>
+                                <p class="mt-1 text-gray-700">Led 50+ cadets in drills, camps, and community service, fostering strong leadership and team management skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 fade-in-section">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">I'm currently seeking new opportunities. Whether you have a question or just want to say hi, feel free to reach out. I'll get back to you as soon as possible!</p>
+                <a href="mailto:priyagupta22026@gmail.com" class="inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-full hover:bg-indigo-700 transition-transform transform hover:scale-105">Contact Me</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://www.linkedin.com/in/priya-gupta-b37731326" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white">
+                    <i data-lucide="linkedin" class="h-6 w-6"></i>
+                </a>
+                 <a href="mailto:priyagupta22026@gmail.com" class="text-gray-400 hover:text-white">
+                    <i data-lucide="mail" class="h-6 w-6"></i>
+                </a>
+                 <a href="tel:+918928569769" class="text-gray-400 hover:text-white">
+                    <i data-lucide="phone" class="h-6 w-6"></i>
+                </a>
+            </div>
+            <p>&copy; <span id="currentYear"></span> Priya Gupta. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        // Initialize lucide icons
+        lucide.createIcons();
+
+        // --- Navbar Scroll Effect ---
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // --- Typing effect ---
+        const typedTextSpan = document.getElementById("typed-text");
+        const textArray = ["Industrial Engineer.", "Problem Solver.", "Tech Enthusiast.", "Leader."];
+        const typingDelay = 100;
+        const erasingDelay = 50;
+        const newTextDelay = 2000; // Delay between current and next text
+        let textArrayIndex = 0;
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < textArray[textArrayIndex].length) {
+                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            } else {
+                setTimeout(erase, newTextDelay);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            } else {
+                textArrayIndex++;
+                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+                setTimeout(type, typingDelay + 1100);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            if(textArray.length) setTimeout(type, newTextDelay + 250);
+        });
+        
+        // --- Fade-in on Scroll Effect ---
+        const sections = document.querySelectorAll('.fade-in-section');
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // --- Set current year in footer ---
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // --- Smooth scrolling for anchor links ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu on click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
